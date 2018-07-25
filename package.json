@@ -1,0 +1,45 @@
+{
+  "name": "winco-common",
+  "version": "0.0.0",
+  "description": "Common routines and type definitions for Winco",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fm-futura/winco-common.git"
+  },
+  "main": "dist/winco-common.js",
+  "module": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch --mode=development"
+  },
+  "keywords": [
+    "audio",
+    "player",
+    "api",
+    "radio"
+  ],
+  "author": "Adrián Pardini <github@tangopardo.com.ar>",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "moment": "^2.22.2",
+    "moment-locales-webpack-plugin": "^1.0.7",
+    "peer-deps-externals-webpack-plugin": "^1.0.4",
+    "ts-loader": "^4.4.2",
+    "typedoc": "^0.11.1",
+    "typedoc-webpack-plugin": "^1.1.4",
+    "typescript": "^2.8.1",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^2.1.5",
+    "webpack-dashboard": "^1.1.1"
+  },
+  "typescript": {
+    "definition": "definitions/index"
+  },
+  "peerDependencies": {
+    "moment": "^2.22.2"
+  }
+}
